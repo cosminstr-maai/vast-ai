@@ -7,7 +7,7 @@ image_ids = filtered_annotations['ImageID'].unique()
 
 open("IMAGE_LIST.txt", 'w').close()
 
-for id in image_ids:
+for id in image_ids[5000:10000]:
     with open("IMAGE_LIST.txt", 'a') as f:
         f.write(f"train/{id}\n")
 

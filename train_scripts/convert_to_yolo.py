@@ -21,6 +21,6 @@ with annotations_file.open() as f:
         bh =  ymax - ymin
 
         with txt_out.open("a") as t:                 
-            t.write(f"80 {xc:.6f} {yc:.6f} {bw:.6f} {bh:.6f}\n")
+            t.write(f"1 {xc:.6f} {yc:.6f} {bw:.6f} {bh:.6f}\n")
 
 print(f"YOLO format salvat in {labels_directory}")
